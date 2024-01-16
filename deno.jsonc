@@ -2,9 +2,13 @@
   "tasks": {
     "dev": "deno run --watch main.ts",
     "cli": "deno run --allow-read --allow-write cli.ts -v --file test_data/tst.md --destFile test_data/tst2.html",
-    "cliHelp": "deno run --allow-read --allow-write cli.ts -h",
+    "cliHelp": "deno run --allow-read --allow-write cli.ts -h"
   },
   "imports": {
     "$std/": "https://deno.land/std@0.212.0/"
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 100
   }
 }

@@ -28,10 +28,11 @@ export function renderWithBase(
   if (opts.printResult) {
     console.log(s);
   }
-  if (typeof opts.destFile === "string") {
+  if (opts.destFile) {
     Deno.writeTextFileSync(opts.destFile, s);
   } else {
-    throw new TypeError("opts.destFile must be a string");
+    //throw new TypeError("opts.destFile must be a string");
+    console.error("No destfile")
   }
 }
 

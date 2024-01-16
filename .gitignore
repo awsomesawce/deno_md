@@ -3,7 +3,7 @@
 
 ### Deno ###
 /.idea/
-/.vscode/
+#/.vscode/
 
 /node_modules
 
@@ -14,3 +14,5 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/deno
 
+ignore/*
+test_data/*
